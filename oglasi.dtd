@@ -1,0 +1,11 @@
+<!ELEMENT Oglasi (Oglas)+> <!-- + jedan ili vise-->
+<!ELEMENT Oglas (Kategorija, DatumIsteka, Cena, Tekst, Tag+, Email+)>   <!-- , sekvenca-->
+<!ELEMENT Kategorija EMPTY> <!--prazan element-->
+<!ELEMENT DatumIsteka (#PCDATA)> <!--#PCDATA je tekst-->
+<!ELEMENT Cena (#PCDATA)>
+<!ELEMENT Tekst (#PCDATA)>
+<!ELEMENT Tag (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ATTLIST Cena valuta (RSD|EUR) "RSD">   <!-- | izbor--> <!--attlist se koristi za deklarisanje atributa elementa-->
+<!ATTLIST Email tip (privatni|sluzbeni) "privatni">
+<!ATTLIST Kategorija tip (Nekretnine|Posao|Usluge|Vozila|Antikviteti|Racunari) "Nekretnine">
