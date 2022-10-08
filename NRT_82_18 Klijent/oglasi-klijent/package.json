@@ -1,0 +1,15 @@
+{
+  "name": "oglasi-klijent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zeljko Grujin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.2",
+    "express": "^4.18.1"
+  }
+}
